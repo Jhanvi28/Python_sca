@@ -1,9 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Request
 
 app = FastAPI()
 
 app.post("/webhook")
-def webhook(body:any):
+def webhook(body:Request):
     return body
 
 app.get("/")
