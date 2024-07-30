@@ -6,6 +6,7 @@ app = FastAPI()
 
 @app.post("/webhook")
 def webhook(body= Body(None)):
+    print(body)
     return body
 
 @app.get("/")
