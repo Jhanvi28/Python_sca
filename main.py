@@ -1,11 +1,11 @@
-from fastapi import FastAPI,Request
+from fastapi import FastAPI,Request,Body
 
 app = FastAPI()
 
 #i am flying jatt
 
 @app.post("/webhook")
-def webhook(body:Request):
+def webhook(body= Body(None)):
     return body
 
 @app.get("/")
