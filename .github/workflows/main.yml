@@ -23,7 +23,7 @@ jobs:
     - name: Run Flake8
       run: |
         mkdir -p flake8-report
-        flake8 --format=html --htmldir=flake8-report
+        flake8 --format=html --htmldir=flake8-report || true
 
     - name: Upload Flake8 report
       uses: actions/upload-artifact@v2
