@@ -1,0 +1,10 @@
+black
+fastapi
+pydantic
+python-multipart
+uvicorn
+requests
+typing
+flake8
+pylint
+SQLAlchemy
