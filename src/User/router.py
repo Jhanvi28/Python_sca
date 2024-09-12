@@ -24,3 +24,11 @@ def create_user(user : UserRequest):
 )
 def get_users():
     pass
+
+@router.get(
+    "users",
+    response_model=UserResponse,
+    status_code=status.HTTP_200_OK
+)
+def get_users():
+    pass
