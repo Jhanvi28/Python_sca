@@ -51,6 +51,8 @@ def generate_report():
     html_report += "</pre>"
 
     html_report += "</body></html>"
+    html_report += "</body></html>"
+
 
     write_to_html("sca_report.html", html_report)
 
